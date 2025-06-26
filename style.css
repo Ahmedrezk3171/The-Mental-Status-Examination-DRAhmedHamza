@@ -1,0 +1,239 @@
+/* ✅ الإعداد العام */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #f5f5f5;
+  direction: rtl;
+  line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ شريط التنقل */
+nav {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #3e8ef7;
+}
+
+/* ✅ الواجهة الرئيسية */
+.hero-section {
+  background: linear-gradient(to left, #3e8ef7, #2c3e50);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  margin: 10px 0 30px;
+  color: #dcdcdc;
+}
+
+.hero-content .author {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.hero-content .info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.hero-content .date {
+  font-size: 16px;
+  color: #bbbbbb;
+}
+
+/* ✅ قسم المكونات الأساسية */
+.info-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+  display: flex;
+  justify-content: start;
+}
+
+.info-box {
+  width: 60%;
+  margin-right: auto;
+  margin-left: 5%;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  border-right: 5px solid #3e8ef7;
+  padding-right: 10px;
+}
+
+.info-box p {
+  font-size: 18px;
+  color: #444;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+/* ✅ القسم التفصيلي */
+.details-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.details-box {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.details-box h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.details-box h3,
+.details-box h4 {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #2980b9;
+  border-right: 4px solid #2980b9;
+  padding-right: 8px;
+}
+
+/* ✅ محتوى pre */
+.details-box pre {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  white-space: pre-wrap;
+  color: #333;
+  background-color: #fcfcfc;
+  padding: 20px;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-height: 80vh;
+}
+
+.details-box pre:hover {
+  background-color: #f0f8ff;
+}
+
+.details-box pre::selection {
+  background: #dfe6e9;
+}
+
+.details-box pre::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #eee;
+  margin: 10px 0;
+}
+
+/* ✅ فاصل بين الأقسام */
+section {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px dashed #ccc;
+}
+
+/* ✅ قسم المرجع */
+.reference-section {
+  background-color: #fdfdfd;
+  padding: 40px 20px;
+  border-top: 2px dashed #ccc;
+}
+
+.reference-box {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  color: #333;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.reference-box h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  border-right: 5px solid #3e8ef7;
+  padding-right: 10px;
+}
+
+.reference-section p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ✅ تحسين العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .info-box {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .details-box pre {
+    font-size: 15px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}
